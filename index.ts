@@ -47,7 +47,9 @@ function gameInit(): void{
     })
 
     startGameButton.onclick = (): void =>{
-        startGame()
+        if(animalChose){
+            startGame()
+        }
     }
 }
 
