@@ -32,7 +32,9 @@ function gameInit() {
         };
     });
     startGameButton.onclick = () => {
-        startGame();
+        if (animalChose) {
+            startGame();
+        }
     };
 }
 function chooseAnimal(animalElement) {
